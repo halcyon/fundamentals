@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile(['org.testng:testng'])
+}
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+        showStandardStreams = true
+    }
+    useTestNG() {
+        useDefaultListeners = true
+    }
+    //turn off Gradle's HTML report to prevent overwriting TestNG reports
+    reports.html.enabled = false
+}
