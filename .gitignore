@@ -24,3 +24,5 @@ hs_err_pid*
 .idea/libraries
 .gradle
 build
+/.ensime
+/.ensime_cache.d/
