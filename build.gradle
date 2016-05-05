@@ -1,3 +1,6 @@
+plugins {
+  id 'org.ensime.gradle' version '0.2.6'
+}
 apply plugin: 'application'
 apply plugin: 'java'
 
@@ -6,11 +9,11 @@ version = '1.0'
 mainClassName = 'com.deepresolve.fundamentals.Core'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testCompile(['org.testng:testng'])
+    testCompile(['org.testng:testng:6.9.10'])
 }
 
 test {

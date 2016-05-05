@@ -2,7 +2,6 @@ package com.deepresolve.fundamentals;
 
 import java.util.stream.IntStream;
 
-
 public class Core {
     public static int divisorsSum(int num) {
         // return IntStream.range(2, num/2 + 1).filter(i -> num % i == 0);
