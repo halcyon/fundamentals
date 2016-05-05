@@ -16,7 +16,8 @@ public class CoreSpec {
 
     @Test
     public void testPrimes() {
-        assertEquals(Arrays.asList(2,3,5,7,11),sut.primes(5));
+        assertEquals(Arrays.asList(2,3,5,7,11),
+                     sut.primes(5));
     }
     @Test
     public void testDivisorsSum() {
