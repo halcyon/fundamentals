@@ -4,6 +4,7 @@ import java.util.stream.IntStream;
 import java.util.Collection;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Core {
     public static int divisorsSum(int num) {
@@ -24,8 +25,16 @@ public class Core {
         return primes;
     }
 
+    void IO() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println(sc.next());
+    }
+
     public static void main(String[] args) {
         //properDivisors(12).forEach(element -> System.out.println(element));
-        System.out.println(divisorsSum(6));
+        //        System.out.println(divisorsSum(6));
+        Core sut = new Core();
+        String data = "55";
+        System.out.println(Util.wrapIO(sut::IO, data));
     }
 }
